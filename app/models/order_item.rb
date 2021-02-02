@@ -19,7 +19,4 @@ class OrderItem < ApplicationRecord
     count * price
   end
 
-  def self.total(order_id)
-    where(order_id: order_id).pluck(:price).sum
-  end
 end
